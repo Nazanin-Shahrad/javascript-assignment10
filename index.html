@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript &amp; jQuery - Chapter 13: Form Enhancement and Validation - Populate a selectbox</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container login">
+        <form name="mainform" id="mainform" action="register.php" method="post">
+
+
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" id="username" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+            <label for="confirmpsw"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Enter Password again" name="confirmpsw" id="confirmpsw" required>
+            <br>
+
+            <input type="checkbox" id="accept" name="accept" value="accept">
+            <label for="accept"> I accept the terms of service</label>
+
+
+            <select id="country" name="country">
+                <option>Select your country</option>
+            </select>
+
+            <input id="submit" type="submit" value="submit" />
+
+        </form>
+    </div><!-- .container -->
+    <script src="utilities.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
